@@ -2,7 +2,7 @@ FROM microsoft/vsts-agent:ubuntu-16.04
 
 # Base line tools
 RUN apt-get update && \
-    apt-get install -y make zip g++ locales python-software-properties ssh && \
+    apt-get install -y make zip g++ locales python-software-properties ssh xsltproc && \
     locale-gen en_US.UTF-8 && export LANG=en_US.UTF-8 && \
     add-apt-repository ppa:ondrej/php
 
