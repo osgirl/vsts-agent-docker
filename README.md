@@ -1,9 +1,8 @@
-**Visual Studio Team Services agent**
+# Visual Studio Team Services agent
 
 This repository contains docker images for the Visual Studio Team Services (VSTS) agent that runs tasks as part of a build or release.
 
-**Supported tags and Dockerfile links**
-
+## Supported tags and Dockerfile links
 
 * ubuntu-16.04-php-node
 	* PHP 7.2 with composer
@@ -14,7 +13,7 @@ This repository contains docker images for the Visual Studio Team Services (VSTS
 	* VS 2017 Build Tools 15.6.7
 
 
-**How to use these images**
+## How to use these images
 
 ```
 docker run \
