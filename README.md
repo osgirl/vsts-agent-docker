@@ -22,5 +22,5 @@ docker run \
     -e VSTS_TOKEN="<pat>" \
     -v /var/run/docker.sock:/var/run/docker.sock \
     -it \
-    emishealth/vsts-agent-docker:ubuntu-16.04-php-node
+    emishealth/vsts-agent-docker:<tag>
 ```
