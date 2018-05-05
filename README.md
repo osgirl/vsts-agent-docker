@@ -6,7 +6,7 @@ This repository contains docker images for the Visual Studio Team Services (VSTS
 
 * ubuntu-16.04-php-node
 	* PHP 7.2 with composer
-	* Node.js 9.9.0 with npm 5.6.0
+	* Node.js 10.0 with npm 6.0
 	* Grunt-Cli
 * windowsservercore-1709
 	* .NET Framework 4.7.1
