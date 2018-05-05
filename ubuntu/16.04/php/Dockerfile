@@ -43,7 +43,7 @@ RUN php -r "copy('https://getcomposer.org/installer', 'composer-setup.php');" &&
     php -r "unlink('composer-setup.php');"
 
 # Node
-RUN curl -sL https://deb.nodesource.com/setup_9.x | bash - && apt-get install nodejs
+RUN curl -sL https://deb.nodesource.com/setup_10.x | bash - && apt-get install -y nodejs
 
 # Npm
-RUN npm install -g grunt-cli
+RUN npm install -g npm@6.0.0 grunt-cli
