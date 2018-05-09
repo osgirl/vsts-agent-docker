@@ -26,3 +26,5 @@ docker run \
     -it \
     emishealth/vsts-agent-docker:<tag>
 ```
+
+You can use the additional parameter ``` -e SERVER_LANGUAGE=en-GB ``` on the windows image to change the language and culture of the container
