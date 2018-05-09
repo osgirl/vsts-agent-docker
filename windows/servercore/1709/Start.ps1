@@ -40,6 +40,24 @@ if($env:VSTS_POOL -eq $null)
     $env:VSTS_POOL = "Default"
 }
 
+if($env:SERVER_LANGUAGE -eq $null)
+{
+    $env:SERVER_LANGUAGE = "en-US";
+}
+
+# Import 'International' module to Powershell session
+Import-Module International
+$culture = New-Object System.Globalization.CultureInfo($input);
+
+Write-Host "Culture found";
+Write-Host $culture.CompareInfo;
+
+# Set regional format - this applies to all users
+Set-Culture $culture;
+
+$UserLanguageList = New-WinUserLanguageList -Language $env:SERVER_LANGUAGE;
+Set-WinUserLanguageList -LanguageList $UserLanguageList -Force;
+
 $useragent = 'vsts-windowscontainer'
 $creds = [System.Convert]::ToBase64String([System.Text.Encoding]::ASCII.GetBytes($("user:$env:VSTS_TOKEN")))
 $encodedAuthValue = "Basic $creds"
