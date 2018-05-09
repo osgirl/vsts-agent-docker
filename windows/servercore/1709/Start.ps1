@@ -50,7 +50,6 @@ Import-Module International
 $culture = New-Object System.Globalization.CultureInfo($input);
 
 Write-Host "Culture found";
-Write-Host $culture.CompareInfo;
 
 # Set regional format - this applies to all users
 Set-Culture $culture;
