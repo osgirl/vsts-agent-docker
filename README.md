@@ -8,7 +8,8 @@ This repository contains [docker images](https://hub.docker.com/r/emishealth/vst
 	* PHP 7.2 with composer
 	* Node.js 10.0 with npm 6.0
 	* Grunt-Cli
-    * xsltproc so you can convert your PHPUnit output to something VSTS will support (JUnit format)
+    * xsltproc so you can convert your PHPUnit output to [something VSTS will support](https://github.com/sebastianbergmann/phpunit/issues/2964)
+
 * windowsservercore-1709
 	* .NET Framework 4.7.1
 	* VS 2017 Build Tools 15.6.7
