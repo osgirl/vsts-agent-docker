@@ -1,6 +1,6 @@
 # Visual Studio Team Services agent
 
-This repository contains [docker images](https://hub.docker.com/r/emishealth/vsts-agent-docker/) for the Visual Studio Team Services (VSTS) agent that runs tasks as part of a build or release.
+This repository contains [docker images](https://hub.docker.com/r/emisgroup/vsts-agent-docker/) for the Visual Studio Team Services (VSTS) agent that runs tasks as part of a build or release.
 
 ## Supported tags and Dockerfile links
 
@@ -24,7 +24,7 @@ docker run \
     -e VSTS_TOKEN="<pat>" \
     -v /var/run/docker.sock:/var/run/docker.sock \
     -it \
-    emishealth/vsts-agent-docker:<tag>
+    emisgroup/vsts-agent-docker:<tag>
 ```
 
 You can use the additional parameter ``` -e SERVER_LANGUAGE=en-GB ``` on the windows image to change the language and culture of the container
