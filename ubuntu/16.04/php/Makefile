@@ -1,4 +1,4 @@
-DOCKER_ORG_PREFIX = emishealth
+DOCKER_ORG_PREFIX = emisgroup
 DOCKER_IMAGE_NAME = vsts-agent-docker
 DOCKER_TAG = ubuntu-16.04-php-node
 
